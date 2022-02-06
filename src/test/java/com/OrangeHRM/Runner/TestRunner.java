@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/FeatureFiles",
-        glue = "src/test/java/com/OrangeHRM/StepDefinitions",
-        dryRun = true,
+        glue = "com/OrangeHRM/StepDefinitions",
+        dryRun = false,
         //tags = "@Sanity",
         plugin = {"pretty","html:src/Reports/CucumberReport.html"}
 )
