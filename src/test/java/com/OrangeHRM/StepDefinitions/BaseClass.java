@@ -35,7 +35,7 @@ public class BaseClass {
         return rand.nextInt(1000);
     }
 
-    public void loginOrangeHRM(WebDriver driver){
+    public void loginOrangeHRM(WebDriver driver) throws InterruptedException {
         driver.get(url);
         loginPageObj = new LoginPage(driver);
         Assert.assertEquals("OrangeHRM",loginPageObj.getPageTitle());
@@ -45,6 +45,7 @@ public class BaseClass {
         logger.info("Username is entered: "+userName);
         loginPageObj.enterPassword(passWord);
         logger.info("Password is entered: "+passWord);
+        Thread.sleep(3000);
         loginPageObj.clickLoginButton();
         logger.info("Clicked Login Button..");
 

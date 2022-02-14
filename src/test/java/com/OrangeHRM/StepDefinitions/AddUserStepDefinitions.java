@@ -22,7 +22,7 @@ public class AddUserStepDefinitions extends BaseClass{
 
 
     @Given("We login to Orange HRM using Admin credentials")
-    public void login_using_admin_credentials() {
+    public void login_using_admin_credentials() throws InterruptedException {
 
         setChromeDriver();
         loginOrangeHRM(driver);

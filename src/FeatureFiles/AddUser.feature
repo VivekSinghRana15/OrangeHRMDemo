@@ -3,7 +3,7 @@ Feature: This feature is for adding a new user & verifying that is has been adde
   Background: Login to the Orange HRM application using Admin credentials
     Given We login to Orange HRM using Admin credentials
 
-    @Working
+
   Scenario Outline: Sr-"<Sr>"- Add a new Contact
     Given We hover over Admin tab and select UserManagement and then click Users
     When we click on Add button
