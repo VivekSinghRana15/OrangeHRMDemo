@@ -38,7 +38,7 @@ public class LoginStepDefinitions extends BaseClass {
     @Then("We should successfully login to the application")
     public void verify_Login_to_application() {
         homePageObj= new HomePage(driver);
-        Assert.assertEquals("Welcome Paul$#", homePageObj.getWelcomeMessage());
+        Assert.assertEquals("Welcome PaulDaniel", homePageObj.getWelcomeMessage());
         logger.info("Successfully Logged in to the Application...");
 
     }

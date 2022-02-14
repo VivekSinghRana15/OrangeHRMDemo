@@ -22,6 +22,14 @@ public class ReadConfig {
         return prop.getProperty("applicationURL");
     }
 
+    public String getUserName(){
+        return prop.getProperty("UserName");
+    }
+
+    public String getPassword(){
+        return prop.getProperty("Password");
+    }
+
 
 
 }

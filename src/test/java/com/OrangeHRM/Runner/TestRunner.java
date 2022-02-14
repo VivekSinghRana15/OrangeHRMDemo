@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/FeatureFiles",
         glue = "com/OrangeHRM/StepDefinitions",
         dryRun = false,
-        //tags = "@Sanity",
+        tags = "@Working",
         plugin = {"pretty","html:src/Reports/CucumberReport.html"}
 )
 
