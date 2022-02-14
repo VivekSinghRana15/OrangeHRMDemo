@@ -96,16 +96,17 @@ public class HomePage {
 
     public void printUserTableData(){
 
-        System.out.println("*****************************************************************************");
+        System.out.println("********************************************************************************");
         //table[@id='resultTable']/thead/tr/th[2]
         for(int a =2;a<=5;a++){
             String b = xdriver.findElement(By.xpath("//table[@id='resultTable']/thead/tr/th["+a+"]")).getText();
             System.out.format("%20s",b);
         }
+        System.out.println();
 
         List<WebElement> tableRows = xdriver.findElements(By.xpath("//table[@id='resultTable']/tbody/tr"));
         int rowCount = tableRows.size();
-        System.out.println("*****************************************************************************");
+        System.out.println("********************************************************************************");
         for(int i=1;i<rowCount;i++){
             for(int j =2;j<=5;j++){
                 String x = xdriver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr["+i+"]/td["+j+"]")).getText();
@@ -113,6 +114,6 @@ public class HomePage {
             }
             System.out.println();
         }
-        System.out.println("******************************************************************************");
+        System.out.println("*********************************************************************************");
     }
 }
